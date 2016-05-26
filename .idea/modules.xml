@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/WearDataGetter.iml" filepath="$PROJECT_DIR$/WearDataGetter.iml" />
       <module fileurl="file://$PROJECT_DIR$/deletefile/deletefile.iml" filepath="$PROJECT_DIR$/deletefile/deletefile.iml" />
       <module fileurl="file://$PROJECT_DIR$/mobile/mobile.iml" filepath="$PROJECT_DIR$/mobile/mobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobiledata/mobiledata.iml" filepath="$PROJECT_DIR$/mobiledata/mobiledata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sensordatagetter/sensordatagetter.iml" filepath="$PROJECT_DIR$/sensordatagetter/sensordatagetter.iml" />
       <module fileurl="file://$PROJECT_DIR$/wear/wear.iml" filepath="$PROJECT_DIR$/wear/wear.iml" />
     </modules>
   </component>

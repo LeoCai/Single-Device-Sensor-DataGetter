@@ -12,6 +12,8 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/deletefile" />
             <option value="$PROJECT_DIR$/mobile" />
+            <option value="$PROJECT_DIR$/mobiledata" />
+            <option value="$PROJECT_DIR$/sensordatagetter" />
             <option value="$PROJECT_DIR$/wear" />
           </set>
         </option>
