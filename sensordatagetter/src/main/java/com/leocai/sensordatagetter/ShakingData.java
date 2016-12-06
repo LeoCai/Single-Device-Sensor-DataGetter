@@ -9,7 +9,9 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.Random;
 
 
@@ -295,7 +297,8 @@ public class ShakingData implements Serializable, Cloneable {
             info.append("0");
             info.append(",");
         }
-        info.append(timeStamp);
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+        info.append(sdf.format(new Date(timeStamp)));
         info.append(",");
         info.append(dt);
         info.append("\n");
@@ -341,4 +344,6 @@ public class ShakingData implements Serializable, Cloneable {
     public boolean isHeartReady(){
         return heartReady;
     }
+
+
 }

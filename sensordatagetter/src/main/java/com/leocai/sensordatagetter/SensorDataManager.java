@@ -19,6 +19,8 @@ public class SensorDataManager {
     private Sensor mSensorAcc;
     private Sensor mSensorGYR;
     private Sensor mSensorMag;
+    private Sensor mSensorGravity;
+    private Sensor mSensorLinear;
 
     private int id = 1;
 
@@ -30,13 +32,15 @@ public class SensorDataManager {
         mSensorAcc = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         mSensorGYR = mSensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
         mSensorMag = mSensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
+        mSensorGravity = mSensorManager.getDefaultSensor(Sensor.TYPE_GRAVITY);
+        mSensorLinear = mSensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION);
         final PowerManager pm = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
         PowerManager.WakeLock mWakeLock = pm.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK, "My Tag");
         mWakeLock.acquire();
     }
 
     public void start() {
-        initFile();
+//        initFile();
         registerSensor();
     }
 
@@ -44,9 +48,9 @@ public class SensorDataManager {
         unRegisterSensor();
     }
 
-    private void initFile() {
+    public void initFile(String fileName) {
         sensorGlobalWriter = new SensorGlobalWriter();
-        sensorGlobalWriter.setFileName("mobile_" + id++ + ".csv");
+        sensorGlobalWriter.setFileName(fileName + ".csv");
     }
 
 
@@ -55,6 +59,8 @@ public class SensorDataManager {
         mSensorManager.unregisterListener(sensorGlobalWriter, mSensorAcc);
         mSensorManager.unregisterListener(sensorGlobalWriter, mSensorGYR);
         mSensorManager.unregisterListener(sensorGlobalWriter, mSensorMag);
+        mSensorManager.unregisterListener(sensorGlobalWriter, mSensorGravity);
+        mSensorManager.unregisterListener(sensorGlobalWriter, mSensorLinear);
 
     }
 
@@ -63,6 +69,8 @@ public class SensorDataManager {
         mSensorManager.registerListener(sensorGlobalWriter, mSensorAcc, (int) (PublicConstants.SENSOPR_PERIOD * 1000)); // 根据频率调整
         mSensorManager.registerListener(sensorGlobalWriter, mSensorGYR, (int) (PublicConstants.SENSOPR_PERIOD * 1000));
         mSensorManager.registerListener(sensorGlobalWriter, mSensorMag, (int) (PublicConstants.SENSOPR_PERIOD * 1000));
+        mSensorManager.registerListener(sensorGlobalWriter, mSensorGravity, (int) (PublicConstants.SENSOPR_PERIOD * 1000));
+        mSensorManager.registerListener(sensorGlobalWriter, mSensorLinear, (int) (PublicConstants.SENSOPR_PERIOD * 1000));
     }
 
 
