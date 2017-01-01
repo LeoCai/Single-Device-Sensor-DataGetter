@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         sensorDataManager = new MySensorManager(this);
+        sensorDataManager.startSensor();
 
         findViewById(R.id.btn_start).setOnClickListener(new View.OnClickListener() {
             @Override
