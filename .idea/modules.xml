@@ -7,7 +7,6 @@
       <module fileurl="file://$PROJECT_DIR$/magnetic/magnetic.iml" filepath="$PROJECT_DIR$/magnetic/magnetic.iml" />
       <module fileurl="file://$PROJECT_DIR$/mobile/mobile.iml" filepath="$PROJECT_DIR$/mobile/mobile.iml" />
       <module fileurl="file://$PROJECT_DIR$/mobiledata/mobiledata.iml" filepath="$PROJECT_DIR$/mobiledata/mobiledata.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sensordatagetter/sensordatagetter.iml" filepath="$PROJECT_DIR$/sensordatagetter/sensordatagetter.iml" />
       <module fileurl="file://$PROJECT_DIR$/wear/wear.iml" filepath="$PROJECT_DIR$/wear/wear.iml" />
     </modules>
   </component>

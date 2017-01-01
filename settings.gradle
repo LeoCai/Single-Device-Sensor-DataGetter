@@ -1,1 +1,1 @@
-include ':mobile', ':wear', ':deletefile', ':mobiledata', ':sensordatagetter', ':magnetic'
+include ':mobile', ':wear', ':deletefile', ':mobiledata', ':magnetic'

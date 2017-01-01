@@ -16,7 +16,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.leocai.sensordatagetter.PublicConstants;
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
 

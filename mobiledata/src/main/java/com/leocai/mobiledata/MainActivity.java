@@ -12,13 +12,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.leocai.sensordatagetter.SensorDataManager;
+import com.leocai.publiclibs.multidecicealign.MySensorManager;
+
 
 public class MainActivity extends AppCompatActivity {
 
     private boolean start;
 
-    private SensorDataManager sensorDataManager;
+    private MySensorManager sensorDataManager;
     private EditText editTextFileName;
     private String fileName;
 
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        sensorDataManager = new SensorDataManager(this);
+        sensorDataManager = new MySensorManager(this);
 
         findViewById(R.id.btn_start).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,9 +56,9 @@ public class MainActivity extends AppCompatActivity {
                         });
                         return;
                     }
-                    sensorDataManager.initFile(fileName);
-                    sensorDataManager.start();
-                    ((Button)v).setText("STOP");
+                    sensorDataManager.setFileName(fileName);
+                    sensorDataManager.startDetection();
+                    ((Button) v).setText("STOP");
                     start = true;
 
                 }else {
