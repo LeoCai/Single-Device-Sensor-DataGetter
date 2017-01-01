@@ -11,3 +11,9 @@ Single Device Sensor DataGetter
 
 # 配置修改
 目前暂时只能重编译[Multi-Sensor-DataCollector](https://github.com/LeoCai/Multi-Sensor-DataCollector)中的publiclibs项目，再重新添加依赖
+
+# 项目module介绍
+* mobiledata 手机传感器采集
+* wear 手表传感器采集
+* magnetic 磁力方向据采集
+* deletefile 手表数据删除
