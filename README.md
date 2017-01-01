@@ -10,4 +10,4 @@ Single Device Sensor DataGetter
 依赖上述项目中的publiclibs项目
 
 # 配置修改
-目前暂时智能重编译[Multi-Sensor-DataCollector](https://github.com/LeoCai/Multi-Sensor-DataCollector)中的publiclibs项目，再重新添加依赖
+目前暂时只能重编译[Multi-Sensor-DataCollector](https://github.com/LeoCai/Multi-Sensor-DataCollector)中的publiclibs项目，再重新添加依赖
