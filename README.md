@@ -5,6 +5,10 @@ Single Device Sensor DataGetter
 1. Android 传感器数据采集并写csv文件
 2. Android Wear 传感器数据采集并写csv文件
 
+<img src="./imgs/1.png" width=200 height=380 />
+<img src="./imgs/2.png" width=200 height=380/>
+<img src="./imgs/3.png" width=200 height=380/>
+
 # 相关项目
 [Multi-Sensor-DataCollector](https://github.com/LeoCai/Multi-Sensor-DataCollector)
 依赖上述项目中的publiclibs项目
