@@ -4,6 +4,9 @@ Single Device Sensor DataGetter
 # 项目简介
 1. Android 传感器数据采集并写csv文件 (安装mobiledata)
 2. Android Wear 传感器数据采集并写csv文件
+<img src="./imgs/1.png" width=200 height=380 />
+<img src="./imgs/2.png" width=200 height=380/>
+<img src="./imgs/3.png" width=200 height=380/>
 
 # 传感器数据
 * 原始加速度
@@ -16,9 +19,7 @@ Single Device Sensor DataGetter
 * 时间戳
 * 时间间隔
 
-<img src="./imgs/1.png" width=200 height=380 />
-<img src="./imgs/2.png" width=200 height=380/>
-<img src="./imgs/3.png" width=200 height=380/>
+
 
 # 相关项目
 * [Multi-Sensor-DataCollector](https://github.com/LeoCai/Multi-Sensor-DataCollector)
