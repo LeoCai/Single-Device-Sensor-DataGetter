@@ -21,13 +21,15 @@ Single Device Sensor DataGetter
 <img src="./imgs/3.png" width=200 height=380/>
 
 # 相关项目
-[Multi-Sensor-DataCollector](https://github.com/LeoCai/Multi-Sensor-DataCollector)
+* [Multi-Sensor-DataCollector](https://github.com/LeoCai/Multi-Sensor-DataCollector)
+
 依赖上述项目中的publiclibs项目
 
 # 配置修改
 * mobile data:
 ```java
 sensorDataManager = new MySensorManager(this);
+//修改频率（单位Hz）
 sensorDataManager.setFrequency(50);
 sensorDataManager.startSensor();
 ```
