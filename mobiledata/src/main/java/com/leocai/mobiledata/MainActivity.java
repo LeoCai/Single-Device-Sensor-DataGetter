@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         sensorDataManager = new MySensorManager(this);
+        // change frequncy (HZ)
+        sensorDataManager.setFrequency(50);
         sensorDataManager.startSensor();
 
         findViewById(R.id.btn_start).setOnClickListener(new View.OnClickListener() {
